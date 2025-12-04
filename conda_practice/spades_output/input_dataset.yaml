@@ -1,0 +1,4 @@
+- "number": !!int "1"
+  "single reads":
+  - "/Users/dz11/github/dd_2025/conda_practice/SRR33976241_1.fastq"
+  "type": "single"

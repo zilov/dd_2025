@@ -1,0 +1,6 @@
+hmm_match {
+  set_of_hmms /Users/dz11/homebrew/Caskroom/miniconda/base/envs/spades/share/spades/coronaspades_hmms/Pfam-A.SARS-CoV-2.hmm.gz,/Users/dz11/homebrew/Caskroom/miniconda/base/envs/spades/share/spades/coronaspades_hmms/Phan-CoV.hmm.gz
+  component_size_part 10
+  start_only_from_tips false
+  set_copynumber false
+}

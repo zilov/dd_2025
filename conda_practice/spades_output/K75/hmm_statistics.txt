@@ -1,0 +1,256 @@
+AAA_11 - AAA domain
+AAA_12 - AAA domain
+CoV_E - Coronavirus small envelope protein E
+CoV_M - Coronavirus M matrix/glycoprotein
+CoV_Methyltr_1 - Coronavirus guanine-N7 methyltransferase
+CoV_Methyltr_2 - Coronavirus 2'-O-methyltransferase
+CoV_NSP10 - Coronavirus RNA synthesis protein NSP10
+CoV_NSP15_C - Coronavirus replicase NSP15, uridylate-specific endoribonuclease
+CoV_NSP15_M - Coronavirus replicase NSP15, middle domain
+CoV_NSP15_N - Coronavirus replicase NSP15, N-terminal oligomerisation
+CoV_NSP2_C - Coronavirus replicase NSP2, C-terminal
+CoV_NSP2_N - Coronavirus replicase NSP2, N-terminal
+CoV_NSP3_C - Coronavirus replicase NSP3, C-terminal
+CoV_NSP4_C - Coronavirus replicase NSP4, C-terminal
+CoV_NSP4_N - Coronavirus replicase NSP4, N-terminal
+CoV_NSP6 - Coronavirus replicase NSP6
+CoV_NSP7 - Coronavirus replicase NSP7
+CoV_NSP8 - Coronavirus replicase NSP8
+CoV_NSP9 - Coronavirus replicase NSP9
+CoV_S1_C - Coronavirus spike glycoprotein S1, C-terminal
+CoV_S2 - Coronavirus spike glycoprotein S2
+CoV_nucleocap - Coronavirus nucleocapsid
+CoV_peptidase - Coronavirus papain-like peptidase
+Macro - Macro domain
+Peptidase_C30 - Coronavirus endopeptidase C30
+RdRP_1 - Viral RNA-dependent RNA polymerase
+bCoV_NAR - Betacoronavirus nucleic acid-binding (NAR)
+bCoV_NS6 - Betacoronavirus NS6 protein
+bCoV_NS7A - Betacoronavirus NS7A protein
+bCoV_NS7B - Betacoronavirus NS7B protein
+bCoV_NS8 - Betacoronavirus NS8 protein
+bCoV_NSP1 - Betacoronavirus replicase NSP1
+bCoV_NSP3_N - Betacoronavirus replicase NSP3, N-terminal
+bCoV_S1_N - Betacoronavirus-like spike glycoprotein S1, N-terminal
+bCoV_S1_RBD - Betacoronavirus spike glycoprotein S1, receptor binding
+bCoV_SUD_C - Betacoronavirus SUD-C domain
+bCoV_SUD_M - Betacoronavirus single-stranded poly(A) binding domain
+bCoV_viroporin - Betacoronavirus viroporin
+# AAA_11-domains - 4
+# AAA_12-domains - 2
+# CoV_E-domains - 2
+# CoV_M-domains - 2
+# CoV_Methyltr_1-domains - 2
+# CoV_Methyltr_2-domains - 6
+# CoV_NSP10-domains - 2
+# CoV_NSP15_C-domains - 2
+# CoV_NSP15_M-domains - 2
+# CoV_NSP15_N-domains - 2
+# CoV_NSP2_C-domains - 8
+# CoV_NSP2_N-domains - 2
+# CoV_NSP3_C-domains - 4
+# CoV_NSP4_C-domains - 2
+# CoV_NSP4_N-domains - 4
+# CoV_NSP6-domains - 12
+# CoV_NSP7-domains - 4
+# CoV_NSP8-domains - 2
+# CoV_NSP9-domains - 2
+# CoV_S1_C-domains - 2
+# CoV_S2-domains - 4
+# CoV_nucleocap-domains - 2
+# CoV_peptidase-domains - 4
+# Macro-domains - 4
+# Peptidase_C30-domains - 2
+# RdRP_1-domains - 2
+# bCoV_NAR-domains - 2
+# bCoV_NS6-domains - 2
+# bCoV_NS7A-domains - 6
+# bCoV_NS7B-domains - 2
+# bCoV_NS8-domains - 2
+# bCoV_NSP1-domains - 2
+# bCoV_NSP3_N-domains - 4
+# bCoV_S1_N-domains - 2
+# bCoV_S1_RBD-domains - 2
+# bCoV_SUD_C-domains - 2
+# bCoV_SUD_M-domains - 2
+# bCoV_viroporin-domains - 4
+
+BGC subgraph 1
+# domains in the component - 28
+# Strong/weak edges in the component - 25/2
+BGC candidate 1
+CoV_NSP3_C-CoV_NSP3_C-CoV_NSP4_N-CoV_NSP6-CoV_NSP4_C-Peptidase_C30-CoV_NSP6-CoV_NSP7-CoV_NSP8-CoV_NSP9-CoV_NSP10-CoV_NSP4_N-CoV_NSP6-RdRP_1-CoV_NSP6-CoV_NSP6-CoV_NSP6-AAA_11-AAA_11-CoV_NSP7-AAA_12-CoV_Methyltr_1-CoV_NSP15_N-CoV_NSP15_M-CoV_NSP15_C-CoV_Methyltr_2-CoV_Methyltr_2-bCoV_S1_N
+Predicted type: Custom
+Domain coordinates:
+432 570
+723 2109
+2316 3288
+3330 3351
+3438 3648
+3816 4611
+4734 5433
+5511 5682
+5760 6273
+6354 6615
+6717 7008
+7545 7683
+7962 8301
+8306 9695
+9711 10023
+10035 10293
+10335 10476
+10718 10847
+11003 11048
+11094 11118
+11396 11552
+11717 13205
+13289 13394
+13499 13712
+13862 14243
+14330 14432
+14438 15140
+15330 15711
+Edge order: 
+1442-,858+,423-,1118+,149+,50361-
+Path is linear
+BGC subgraph 2
+# domains in the component - 28
+# Strong/weak edges in the component - 25/2
+BGC subgraph 3
+# domains in the component - 14
+# Strong/weak edges in the component - 10/3
+BGC subgraph 4
+# domains in the component - 13
+# Strong/weak edges in the component - 10/2
+BGC candidate 1
+CoV_nucleocap-bCoV_NS8-bCoV_NS7B-bCoV_NS7A-bCoV_NS7A-bCoV_viroporin-CoV_M-CoV_E-bCoV_viroporin-bCoV_NS6-CoV_S2-CoV_S2-CoV_S1_C
+Predicted type: Custom
+Domain coordinates:
+184 1129
+1347 1623
+1713 1761
+1838 1937
+1946 2078
+2291 2372
+2424 2949
+3146 3266
+3380 4124
+4138 4139
+4336 5068
+5071 5824
+6256 6349
+Edge order: 
+363+,552-,37+
+Path is linear
+BGC subgraph 5
+# domains in the component - 10
+# Strong/weak edges in the component - 7/2
+BGC candidate 1
+bCoV_NS7A-bCoV_NS7A-bCoV_viroporin-CoV_M-CoV_E-bCoV_viroporin-bCoV_NS6-CoV_S2-CoV_S2-CoV_S1_C
+Predicted type: Custom
+Domain coordinates:
+57 60
+69 201
+414 495
+547 1072
+1269 1389
+1503 2247
+2261 2262
+2459 3191
+3194 3947
+4379 4472
+Edge order: 
+35174-,552-,37+
+Path is linear
+BGC subgraph 6
+# domains in the component - 5
+# Strong/weak edges in the component - 3/1
+BGC candidate 1
+bCoV_NSP1-CoV_NSP2_N-CoV_NSP2_C-CoV_NSP2_C-CoV_NSP2_C
+Predicted type: Custom
+Domain coordinates:
+98 296
+491 1136
+1559 1560
+1745 1775
+1898 1997
+Edge order: 
+558-,599-,990-
+Path is linear
+BGC subgraph 7
+# domains in the component - 5
+# Strong/weak edges in the component - 3/1
+BGC subgraph 8
+# domains in the component - 4
+# Strong/weak edges in the component - 3/0
+BGC candidate 1
+Macro-bCoV_NSP3_N-bCoV_NSP3_N-CoV_NSP2_C
+Predicted type: Custom
+Domain coordinates:
+54 81
+180 243
+372 615
+876 1113
+Edge order: 
+85+
+Path is linear
+BGC subgraph 9
+# domains in the component - 4
+# Strong/weak edges in the component - 3/0
+BGC subgraph 10
+# domains in the component - 3
+# Strong/weak edges in the component - 2/0
+BGC candidate 1
+bCoV_SUD_M-bCoV_SUD_C-CoV_peptidase
+Predicted type: Custom
+Domain coordinates:
+585 936
+1026 1140
+1224 1833
+Edge order: 
+720+,554-
+Path is linear
+BGC subgraph 11
+# domains in the component - 3
+# Strong/weak edges in the component - 2/0
+BGC subgraph 12
+# domains in the component - 2
+# Strong/weak edges in the component - 1/0
+BGC candidate 1
+bCoV_NAR-CoV_peptidase
+Predicted type: Custom
+Domain coordinates:
+137 353
+548 824
+Edge order: 
+543+
+Path is linear
+BGC subgraph 13
+# domains in the component - 2
+# Strong/weak edges in the component - 1/0
+BGC candidate 1
+bCoV_S1_RBD-CoV_Methyltr_2
+Predicted type: Custom
+Domain coordinates:
+26 125
+148 172
+Edge order: 
+676-
+Path is linear
+BGC subgraph 14
+# domains in the component - 2
+# Strong/weak edges in the component - 1/0
+BGC subgraph 15
+# domains in the component - 2
+# Strong/weak edges in the component - 1/0
+BGC subgraph 16
+# domains in the component - 1
+# Strong/weak edges in the component - 0/0
+BGC candidate 1
+Macro
+Predicted type: Custom
+Domain coordinates:
+7 172
+Edge order: 
+50109-
+Path is linear

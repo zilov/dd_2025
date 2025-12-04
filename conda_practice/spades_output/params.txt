@@ -1,0 +1,33 @@
+Command line: /Users/dz11/homebrew/Caskroom/miniconda/base/envs/spades/bin/spades.py	--corona	-s	/Users/dz11/github/dd_2025/conda_practice/SRR33976241_1.fastq	-o	/Users/dz11/github/dd_2025/conda_practice/spades_output	
+
+System information:
+  SPAdes version: 4.2.0
+  Python version: 3.14.1
+  OS: macOS-26.1-arm64-arm-64bit-Mach-O
+
+Output dir: /Users/dz11/github/dd_2025/conda_practice/spades_output
+Mode: ONLY assembling (without read error correction)
+Debug mode is turned OFF
+
+Dataset parameters:
+  RNA virus assembly mode
+  Metagenomic mode
+  Reads:
+    Library number: 1, library type: single
+      left reads: not specified
+      right reads: not specified
+      interlaced reads: not specified
+      single reads: ['/Users/dz11/github/dd_2025/conda_practice/SRR33976241_1.fastq']
+      merged reads: not specified
+Assembly parameters:
+  k: auto
+  Repeat resolution is enabled
+  Mismatch careful mode is turned OFF
+  MismatchCorrector will be SKIPPED
+  Coverage cutoff is turned OFF
+  Assembly graph output will use GFA v1.2 format
+Other parameters:
+  Dir for temp files: /Users/dz11/github/dd_2025/conda_practice/spades_output/tmp
+  Threads: 16
+  Memory limit (in Gb): 250
+

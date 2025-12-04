@@ -1,0 +1,33 @@
+·	---
+max read length: 152
+nomerge max read length: 152
+average read length: 49.8677
+average coverage: 559.113
+libraries:
+  - type:            single
+    number:          1
+    single reads:
+      - '/Users/dz11/github/dd_2025/conda_practice/SRR33976241_1.fastq'
+    data:
+      unmerged read length: 152
+      merged read length: 0
+      insert size mean: 0
+      insert size deviation: 0
+      insert size left quantile: 0
+      insert size right quantile: 0
+      insert size median: 0
+      insert size mad: 0
+      insert size distribution: {  }
+      pi threshold:    0
+      binary reads info:
+        binary converted: true
+        bin reads info file: '/Users/dz11/github/dd_2025/conda_practice/spades_output/.bin_reads/INFO_0'
+        paired read prefix: '/Users/dz11/github/dd_2025/conda_practice/spades_output/.bin_reads/paired_0'
+        merged read prefix: '/Users/dz11/github/dd_2025/conda_practice/spades_output/.bin_reads/merged_0'
+        single read prefix: '/Users/dz11/github/dd_2025/conda_practice/spades_output/.bin_reads/single_0'
+        chunk num:       11
+      single reads mapped: false
+      library index:   0
+      number of reads: 936790
+      total nucleotides: 46715595
+...
