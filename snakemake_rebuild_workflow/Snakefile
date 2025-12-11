@@ -1,0 +1,55 @@
+## написать пайплайн из трех шагов
+## 1. взять риды и запуситить fastqc
+## 2. выровнять риды на референс с помощью minimap2
+## 3. посчитать покрытие с помощью bedtools genomecov
+
+
+reads_hifi = "./test/hifi_reads.fastq"
+prefix = "hifi_reads"
+assembly_fasta = "./test/assembly_with_Ns.fasta"
+
+
+rule all:
+    input:
+        "results/fastqc/hifi_reads_fastqc.html",
+        "results/coverage/hifi_reads_coverage.txt"
+
+
+rule fastqc:
+    input:
+        reads=reads_hifi
+    output:
+        html=f"results/fastqc/{prefix}_fastqc.html",
+        zip=f"results/fastqc/{prefix}_fastqc.zip"
+    conda:
+        "envs/fastqc_env.yaml"
+    shell:
+        """
+        fastqc {input.reads} --outdir=results/fastqc
+        """
+
+rule align_minimap2:
+    input:
+        reads=reads_hifi,
+        ref=assembly_fasta
+    output:
+        bam=f"results/alignment/{prefix}_to_assembly.bam"
+    conda:
+        "envs/minimap_env.yaml"
+    shell:
+        """
+        minimap2 -a {input.ref} {input.reads} | samtools sort -o {output.bam}
+        samtools index {output.bam}
+        """
+
+rule coverage_bedtools:
+    input:
+        bam=rules.align_minimap2.output.bam
+    output:
+        cov=f"results/coverage/{prefix}_coverage.txt"
+    conda:
+        "envs/minimap_env.yaml"
+    shell:
+        """
+        bedtools genomecov -ibam {input.bam} > {output.cov}
+        """
