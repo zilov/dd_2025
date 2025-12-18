@@ -4,36 +4,35 @@
 ## 3. посчитать покрытие с помощью bedtools genomecov
 
 
-reads_hifi = "./test/hifi_reads.fastq"
-prefix = "hifi_reads"
-assembly_fasta = "./test/assembly_with_Ns.fasta"
-
+assembly_fasta = "./test/assembly_with_Ns.fasta.gz"
 
 rule all:
     input:
-        "results/fastqc/hifi_reads_fastqc.html",
-        "results/coverage/hifi_reads_coverage.txt"
-
+        expand("results/{sample}/fastqc/{sample}_fastqc.html", 
+               sample=["sample_1_reads", "sample_2_reads", "sample_3_reads", "hifi_reads"]),
+        expand("results/{sample}/coverage/{sample}_coverage.txt", 
+               sample=["sample_1_reads", "sample_2_reads", "sample_3_reads", "hifi_reads"])
 
 rule fastqc:
     input:
-        reads=reads_hifi
+        reads= "./test/{sample}.fastq"
     output:
-        html=f"results/fastqc/{prefix}_fastqc.html",
-        zip=f"results/fastqc/{prefix}_fastqc.zip"
+        html="results/{sample}/fastqc/{sample}_fastqc.html",
+        zip="results/{sample}/fastqc/{sample}_fastqc.zip"
     conda:
         "envs/fastqc_env.yaml"
     shell:
         """
-        fastqc {input.reads} --outdir=results/fastqc
+        fastqc {input.reads} --outdir=results/{wildcards.sample}/fastqc
         """
 
 rule align_minimap2:
     input:
-        reads=reads_hifi,
+        reads="./test/{sample}.fastq",
         ref=assembly_fasta
+    threads: max(2, workflow.cores)
     output:
-        bam=f"results/alignment/{prefix}_to_assembly.bam"
+        bam="results/{sample}/alignment/{sample}_to_assembly.bam"
     conda:
         "envs/minimap_env.yaml"
     shell:
@@ -46,7 +45,7 @@ rule coverage_bedtools:
     input:
         bam=rules.align_minimap2.output.bam
     output:
-        cov=f"results/coverage/{prefix}_coverage.txt"
+        cov="results/{sample}/coverage/{sample}_coverage.txt"
     conda:
         "envs/minimap_env.yaml"
     shell:
